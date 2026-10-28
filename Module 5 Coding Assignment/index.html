@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive restaurant demo with a randomly selected Specials category.">
+  <title>David Chu's Bistro — Module 5 Assignment</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" id="brand-home" aria-label="Return to home">
+        <span class="brand-mark" aria-hidden="true">DC</span>
+        <span><strong>David Chu's Bistro</strong><small>Fresh food, made with care</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <button class="nav-link" data-view="menu">Menu</button>
+        <button class="nav-link" data-view="specials">Specials</button>
+        <button class="nav-link" data-view="about">About</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home-view" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Good food. Good company.</p>
+        <h1>A little something<br><span>for every appetite.</span></h1>
+        <p>Explore fresh favorites from our kitchen. Choose a category, or let us surprise you with today's Specials.</p>
+        <button id="hero-specials" class="primary-button">Surprise me with Specials <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustration of a bowl of fresh food">
+        <div class="plate"><div class="food food-one"></div><div class="food food-two"></div><div class="food food-three"></div><div class="food food-four"></div><div class="food food-five"></div></div>
+        <span class="art-label">Made fresh daily</span>
+      </div>
+    </section>
+    <section id="tiles" class="tile-grid" aria-label="Explore the restaurant">
+      <button class="feature-tile tile-menu" data-view="menu"><span class="tile-icon" aria-hidden="true">✦</span><span class="tile-title">Menu</span><span class="tile-description">Browse every category</span></button>
+      <button class="feature-tile tile-specials" data-view="specials"><span class="tile-icon" aria-hidden="true">★</span><span class="tile-title">Specials</span><span class="tile-description">A different surprise each time</span></button>
+      <button class="feature-tile tile-about" data-view="about"><span class="tile-icon" aria-hidden="true">♡</span><span class="tile-title">Our Story</span><span class="tile-description">A little about our kitchen</span></button>
+    </section>
+    <section id="content-view" class="content-view" hidden aria-live="polite"></section>
+  </main>
+  <footer><span>David Chu's Bistro</span><span>Freshly prepared · Served with care</span></footer>
+</body>
+</html>
